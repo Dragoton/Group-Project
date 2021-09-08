@@ -203,3 +203,8 @@ h6 {
 #location h6 {
   white-space: nowrap;
 }
+
+footer {
+  justify-content: center;
+  align-items: center;
+}
