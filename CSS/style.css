@@ -52,6 +52,7 @@ nav {
   color: #e8b94d;
   margin-left: 0.2rem;
 }
+
 .shoppingcart img {
   width: 1rem;
 }
@@ -63,12 +64,93 @@ nav {
 .buy {
   margin-left: auto;
 }
+
 .arrow {
   width: 0.7rem;
   margin-left: 0.3rem;
 }
 
 /*nav end*/
+
+/*main*/
+
+.card {
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card_img {
+  width: 100%;
+  height: 28.3125rem;
+  object-fit: cover;
+  display: block;
+}
+
+.card::before {
+  content: "";
+  background-image: linear-gradient(300deg, #ea0681, #42137b);
+  opacity: 60%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card_text img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.card_text h1 {
+  position: absolute;
+  font-family: Iron;
+  font-size: 4rem;
+  margin-right: 1.1rem;
+  color: white;
+  top: 15%;
+  left: 5%;
+}
+
+.button1 {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  background-color:#E8B94D;
+  font-family: Iron;
+  padding: 0;
+  font-size: 1.5rem;
+  color: white;
+border: none;
+padding: 0.3rem;
+}
+
+.button2 {
+  position: absolute;
+  top: 75%;
+  left: 29%;
+  background-color: #E32991;
+  font-family: Iron;
+  padding: 0;
+border: none;
+color: white;
+font-size: 1.5rem;
+border: none;
+padding: 0.3rem;
+}
+
+.card_text p {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 71%;
+  left: 80%;
+  font-family: Iron;
+  color: white;
+}
+
+/*main end*/
 
 /*footer*/
 
@@ -86,6 +168,7 @@ footer {
   width: 100%;
   padding: 2%;
 }
+
 .navfooter h6 {
   font-size: 0.7rem;
   margin: 0%;
@@ -98,6 +181,7 @@ footer {
   margin-top: 1%;
   color: #e8b94d;
 }
+
 .navfooter a {
   font-weight: 100;
   font-size: 0.6rem;
@@ -133,12 +217,14 @@ h3 {
   justify-content: center;
   width: 100%;
 }
+
 .social_media a {
   padding-top: 1%;
   margin-right: 0%;
   flex-basis: 2rem;
   text-decoration: none;
 }
+
 .copyright {
   font-size: 0.8rem;
   font-family: Iron;
@@ -148,6 +234,7 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+
 h6 {
   font-size: 0.7rem;
   color: #e8b94d;
@@ -174,3 +261,5 @@ h6 {
 
 #customerservice {
 }
+
+/*footer end*/
