@@ -21,57 +21,25 @@ fetch(url, options)
     console.error("An error occured:", e.message);
   });
 
-function handleData(bands) {
-  bands.forEach((band) => {
-    console.log(band);
+//clone the template that we have for the 6 bands
 
+function handleData(bands) {
+  //here I grab each on of the elements from the array
+  bands.forEach((band) => {
+    //here I console log it to make sure everything is okay
+    console.log(band);
+    //here I take the template that I already have
     const template = document.querySelector("template").content;
+    //here I clone it
     const clone = template.cloneNode(true);
+    //here I add all the data from database to the existing tags from the template
     clone.querySelector("h2").textContent = band.bandName;
     clone.querySelector("img").src = band.img_url;
+    //here I add the id of the band to have it on the http so it can be selected as a single element 
     clone.querySelector(".templates a").href = `singleband.html?id=${band._id}`;
+    //here I place all my clones in the main
     const mainEl = document.querySelector("main");
+    //here I show the clones on main
     mainEl.appendChild(clone);
   });
 }
-
-// // url.forEach(showContent);
-// // function showContent(product) {}
-
-// // console.table(url);
-
-// // url.forEach(showProduct);
-
-// function showProduct(elements) {
-//   const myTemplate = document.querySelector("template").content;
-//   console.log(myTemplate);
-//   const myCopy = myTemplate.cloneNode(true);
-//   console.log(myCopy);
-//   myCopy.querySelector("h2").textContent = elements.bandName;
-//   myCopy.querySelector("img").src = elements.Picture;
-//   const mainEl = document.querySelector("main");
-//   mainEl.appendChild(myCopy);
-//   //   document.querySelector("main").appendChild(myCopy);
-// }
-
-// // window.addEventListener("load", showContent);
-
-// // function showContent() {
-// //     var temp= document.getElementsByTagName("template");
-// //     var clon = temp.content.cloneNode(true);
-// //     document.main.appendChild(clon);
-// // }
-
-// // console.table(bands);
-
-// // bands.forEach(showProduct);
-
-// // function showProduct(band) {
-// //   const template = document.querySelector("template").content;
-// //   const clone = template.cloneNode(true);
-// //   clone.querySelector("h2").textContent = "Band Name";
-// //   clone.querySelector("img").src ="img src="mainposter.jpg"" ;
-
-// //   const parent = document.querySelector("main");
-// //   parent.appendChild(clone);
-// //

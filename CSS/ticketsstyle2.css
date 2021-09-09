@@ -1,0 +1,210 @@
+/*nav end*/
+
+h1 {
+  font-family: Iron;
+  color: #e8b94d;
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+  border-bottom: 3px solid #e8b94d;
+  width: 27rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: Iron;
+  gap: 25px;
+}
+
+.block-1 {
+  margin-top: 3rem;
+}
+
+.block-4 {
+  margin-bottom: 10rem;
+}
+
+.redbox {
+  position: absolute;
+  display: inline-block;
+  left: 10%;
+  color: #e8b94d;
+  width: 105px;
+  height: 129px;
+}
+
+/* .button1 {
+  position: absolute;
+  display: flex;
+  padding: 2rem;
+  width: 6rem;
+  height: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  gap: 25px;
+  margin: 0 auto;
+} */
+
+.buybutton2 {
+  position: absolute;
+  left: 90%;
+  display: flex;
+  width: 6rem;
+  height: 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  gap: 25px;
+  color: white;
+  background: #e8b94d;
+  margin: 0 auto;
+}
+
+[class^="block-1"] {
+  display: flex;
+  flex-direction: row;
+  height: 129px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+[class^="block-2"] {
+  display: flex;
+  flex-direction: row;
+  height: 129px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+[class^="block-3"] {
+  display: flex;
+  flex-direction: row;
+  height: 129px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+[class^="block-3"] {
+  display: flex;
+  flex-direction: row;
+  height: 129px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+[class^="block-4"] {
+  display: flex;
+  flex-direction: row;
+  height: 129px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .button1 {
+  position: absolute;
+  left: 63%;
+  display: block;
+  border: 5px;
+  width: 6rem;
+  height: 1rem;
+  padding: 18px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  background: #e8b94d;
+  margin: 0 auto;
+} */
+
+/* .redbutton1 {
+  position: absolute;
+  left: 63%;
+  display: inline-block;
+  width: 6rem;
+  height: 1rem;
+  padding: 18px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  background: #e32991;
+  margin: 0 auto;
+} */
+
+.box {
+  position: absolute;
+  left: 6%;
+  display: block;
+  width: 105px;
+  height: 129px;
+  gap: 25px;
+  background: #e8b94d;
+  margin: 0 auto;
+}
+
+.boxred {
+  position: absolute;
+  left: 6%;
+  display: block;
+  width: 105px;
+  height: 129px;
+  gap: 25px;
+  background: #e32991;
+  margin: 0 auto;
+}
+
+.buybutton2 {
+  position: absolute;
+  left: 80%;
+  width: 8rem;
+  height: 1.1rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  background: #e8b94d;
+  margin: 0rem;
+}
+
+.redbuybutton2 {
+  position: absolute;
+  left: 80%;
+  width: 8rem;
+  height: 1.1rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  background: #e32991;
+  margin: 0rem;
+}
+.blocktext {
+  position: absolute;
+  left: 15%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.price {
+  position: absolute;
+  left: 45%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.container {
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+}
