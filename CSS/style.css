@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Iron;
-  src: url(/FONT/Iron\ &\ Brine.ttf);
+  font-family: "Iron";
+  src: url("../FONT/Iron_&_Brine.ttf");
 }
 
 html {
@@ -21,7 +21,7 @@ body {
   background-color: #1f1f1f;
 }
 
-/*nav*/
+/* /nav/ */
 
 a {
   text-decoration: none;
@@ -51,7 +51,6 @@ nav {
   color: #e8b94d;
   margin-left: 0.2rem;
 }
-
 .shoppingcart img {
   width: 1rem;
 }
@@ -63,17 +62,17 @@ nav {
 .buy {
   margin-left: auto;
 }
-
 .arrow {
   width: 0.7rem;
   margin-left: 0.3rem;
 }
 
-/*nav end*/
+/* nav end */
 
 /*main*/
 
 .card {
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
   position: relative;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -106,7 +105,7 @@ nav {
 .card_text h1 {
   position: absolute;
   font-family: Iron;
-  font-size: 4rem;
+  font-size: 5rem;
   margin-right: 1.1rem;
   color: white;
   top: 15%;
@@ -117,41 +116,95 @@ nav {
   position: absolute;
   top: 75%;
   left: 5%;
-  background-color:#E8B94D;
+  background-color: #e8b94d;
   font-family: Iron;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: white;
-border: none;
-padding: 0.3rem;
+  border: none;
+  padding: 0.5rem;
 }
 
 .button2 {
   position: absolute;
   top: 75%;
-  left: 29%;
-  background-color: #E32991;
+  left: 28%;
+  background-color: #e32991;
   font-family: Iron;
   padding: 0;
-border: none;
-color: white;
-font-size: 1.5rem;
-border: none;
-padding: 0.3rem;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 0.5rem;
 }
 
 .card_text p {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 2rem;
   top: 71%;
   left: 80%;
   font-family: Iron;
   color: white;
 }
 
-/*main end*/
+main {
+  padding-top: 2rem;
+}
 
-/*footer*/
+.templates {
+  position: relative;
+  margin-bottom: 3rem;
+  margin-right: 0rem;
+}
+
+.card_for_template img {
+  width: 32.5rem;
+  height: 23.875rem;
+  object-fit: cover;
+  display: block;
+  margin-left: 1rem;
+}
+
+main {
+  margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card_for_template::before {
+  content: "";
+  background-image: linear-gradient(300deg, #ea0681, #42137b);
+  opacity: 20%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+  right: 0.8rem;
+}
+
+.templates {
+  transition: all 0.2s ease-in-out;
+}
+
+.templates:hover {
+  transform: scale(1.1);
+}
+
+article h2 {
+  position: absolute;
+  left: 20%;
+  top: 70%;
+}
+
+article h2 {
+  font-size: 3rem;
+  font-family: Iron;
+  color: white;
+}
+
+/* /footer/ */
 
 footer {
   display: flex;
@@ -169,7 +222,6 @@ footer {
   border-right: 2px solid #e8b94d;
   padding: 2%;
 }
-
 .navfooter h6 {
   font-size: 0.7rem;
   margin: 0%;
@@ -181,7 +233,6 @@ footer {
   color: #e8b94d;
   font-family: Iron;
 }
-
 .navfooter a {
   text-decoration: none;
   color: #e8b94d;
@@ -217,7 +268,6 @@ h3 {
   justify-content: center;
   width: 100%;
 }
-
 .social_media a {
   padding-top: 1%;
   margin-right: 0%;
@@ -226,7 +276,6 @@ h3 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-
 .copyright {
   font-size: 0.7rem;
   font-family: Iron;
@@ -235,7 +284,6 @@ h3 {
   align-items: center;
   justify-content: center;
 }
-
 h6 {
   font-size: 0.7rem;
   color: #e8b94d;
@@ -291,4 +339,7 @@ h6 {
   white-space: nowrap;
 }
 
-/*footer end*/
+footer {
+  justify-content: center;
+  align-items: center;
+}
