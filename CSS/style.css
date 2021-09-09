@@ -104,10 +104,6 @@ footer {
   font-family: Iron;
 }
 
-h3 {
-  font-size: 0.7rem;
-}
-
 #location {
   display: flex;
   flex-direction: column;
